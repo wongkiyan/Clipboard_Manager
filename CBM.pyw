@@ -14,7 +14,7 @@ from modules import clear_module
 request_functions = {
     "SAVE" : save_module.run,
     "LOAD" : load_module.run,
-    "LS" : list_module.run,
+    "LIST" : list_module.run,
     "CLEAR" : clear_module.run,
 }
 
