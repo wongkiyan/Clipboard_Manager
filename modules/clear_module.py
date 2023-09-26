@@ -3,9 +3,10 @@ import configs as Configs
 
 def run():
     cbm_shelf = shelve.open(Configs.SHELF_DATA_PATH)
-    print("-- List operation executed --")
-    print("\n".join(map(str, list(cbm_shelf.keys()))))
+    cbm_shelf.clear()
     cbm_shelf.close()
+    
+    print("-- Clear operation executed --")
 
 if __name__ == "__main__":
     run()
