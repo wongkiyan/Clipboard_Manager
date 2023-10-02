@@ -10,12 +10,14 @@ from modules import save_module
 from modules import load_module
 from modules import list_module
 from modules import clear_module
+from modules import slash_module
 
 request_functions = {
     "SAVE" : save_module.run,
     "LOAD" : load_module.run,
     "LIST" : list_module.run,
     "CLEAR" : clear_module.run,
+    "SLASH" : slash_module.run,
 }
 
 def handle_request():
